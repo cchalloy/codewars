@@ -54,12 +54,10 @@ const bulk = (arr) => {
   /** node v8 tweak */
   // let a = arr.map((v) => v.split(' '));
   // a = [].concat(...a)
-  // console.log(JSON.stringify(a))
   for (let index = 0; index < a.length; index+=2) {
     const grams = a[index].replace('g', '');
     const element = a[index+1].replace(',', '');
     const [prots, carbs, fat] = food[element].map((v) => grams * v / 100);
-    // console.log(grams, element, prots, prots*4, carbs*4, fat*9)
     
     calories += prots*4+carbs*4+fat*9;
     proteins += prots;
