@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/568018a64f35f0c613000054
+
 class Guesser {
   constructor(number, lives) {
     this.number = number;
@@ -16,15 +18,3 @@ class Guesser {
     }
   }
 }
-
-let guesser = new Guesser(10, 2);
-console.log(guesser.guess(11));
-console.log(guesser.guess(9));
-console.log(guesser.guess(7));
-
-let guesser2 = new Guesser(10, 2);
-console.log(guesser2.guess(11));
-console.log(guesser2.guess(10));
-
-let guesser3 = new Guesser(10, 2);
-console.log(guesser3.guess("k"));

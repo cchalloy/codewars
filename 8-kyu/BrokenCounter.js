@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/526471539d52735c620000c6
+
 function Counter() {
   this.value = 0;
 }
